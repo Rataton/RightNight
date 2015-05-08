@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import mx.example.ruben.stir.R;
 import mx.example.ruben.stir.app.UserInterface.Fragments.ClubsFragment;
+import mx.example.ruben.stir.app.UserInterface.Fragments.MapFragment;
 import mx.example.ruben.stir.app.UserInterface.Fragments.NavigationDrawerFragment;
 
 
@@ -71,17 +72,16 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
                             .commit();
                     break;
                 case 1:
-                    //fragment = new ComicsFragment();
+                    fragment = new MapFragment();
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.main_container, fragment)
+                            .commit();
                     break;
                 case 2:
                     //fragment = new CreatorsFragment();
                     break;
             }
-
-
-
         }
-
     }
 
     public void setNewTitle(int number) {
@@ -106,7 +106,10 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+
+        if (!mNavigationDrawerFragment.isDrawerOpen())
+        {
             restoreActionBar(mTitle);
             return true;
         } else
