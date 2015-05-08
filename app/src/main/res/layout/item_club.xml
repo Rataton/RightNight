@@ -14,7 +14,7 @@
         android:paddingLeft="16dp"
         fresco:overlayImage="@color/overlay_image"
         fresco:actualImageScaleType="focusCrop"
-        fresco:placeholderImage="@mipmap/ic_launcher"
+        fresco:placeholderImage="@drawable/happy_disco"
         fresco:placeholderImageScaleType="focusCrop"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
