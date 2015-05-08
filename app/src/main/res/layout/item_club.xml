@@ -27,7 +27,7 @@
         android:gravity="center"
         android:fontFamily="sans-serif-condensed"
         android:padding="@dimen/standard_spacing"
-        android:textColor="@color/white"
+        android:textColor="@color/secondary_text"
         android:textSize="52sp"
         android:maxLines="2"
         android:textStyle="bold|italic"
