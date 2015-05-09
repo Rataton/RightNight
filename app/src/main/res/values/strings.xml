@@ -3,7 +3,8 @@
 <resources>
     <string name="app_name">RightNight</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
     <string name="title_activity_character_detail_actiity">Detalles</string>
 
     <string name="title_section1">Directorio</string>

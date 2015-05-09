@@ -92,7 +92,7 @@ public class NavigationDrawerFragment extends Fragment {
 
         List<ItemOptionNavDra> itemOptionNavDras = new ArrayList<>();
 
-        itemOptionNavDras.add(new ItemOptionNavDra(R.mipmap.ic_launcher, R.string.title_section1));
+        itemOptionNavDras.add(new ItemOptionNavDra(R.drawable.ic_local_bar_black_48dp, R.string.title_section1));
         itemOptionNavDras.add(new ItemOptionNavDra(R.drawable.ic_action_location_found, R.string.title_section2));
         itemOptionNavDras.add(new ItemOptionNavDra(R.drawable.ic_action_settings, R.string.title_section3));
 

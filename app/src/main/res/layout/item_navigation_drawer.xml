@@ -25,6 +25,7 @@
         android:layout_centerVertical="true"
         android:paddingLeft="72dp"
         android:textSize="14sp"
+        android:textColor="@color/secondary_text"
         tools:ignore="RtlHardcoded,RtlSymmetry" />
 </RelativeLayout>
 
