@@ -42,11 +42,30 @@ public class ClubsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         this.context = context;
     }
 
+    @Override
+    public int getItemViewType(int position)
+    {
+        return clubs.get(position) != null ? R.layout.item_club : R.layout.item_progress;
+    }
+
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType)
     {
+
+        if (viewType == R.layout.item_club)
+        {
             View itemView = LayoutInflater.from(context)
                     .inflate(R.layout.item_club, viewGroup, false);
-        return new ClubViewHolder(itemView);
+
+            return new ClubViewHolder(itemView);
+        }
+        else
+        {
+            View itemView = LayoutInflater.from(context)
+                    .inflate(R.layout.item_progress, viewGroup, false);
+
+            return new ProgressViewHolder(itemView);
+        }
+
     }
 
     @Override
@@ -81,7 +100,7 @@ public class ClubsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
 
 
     @Override
-    public int getItemCount()
+    public int getItemCount() //-1 cuando se implemente el progress
     {
         if (clubs == null)
             return 0;
@@ -94,17 +113,27 @@ public class ClubsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         this.clubs = clubs;
         notifyDataSetChanged();
     }
+
+    private void showOnLoadViewHolder() {
+        clubs.add(null);
+        notifyDataSetChanged();
+    }
+
+    public boolean isProgressViewVisible() {
+        return clubs.contains(null);
+    }
+
     public void DummyContent()
     {
         clubs = new ArrayList<>();
-
         Club temp;
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 40; i++)
         {
             String name = "Club "+i;
             temp = new Club(2,name,name,Uri.EMPTY);
             clubs.add(temp);
         }
+        clubs.add(null);
     }
 
     public class ClubViewHolder extends RecyclerView.ViewHolder
@@ -136,6 +165,11 @@ public class ClubsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
             ButterKnife.inject(this, itemView);
         }
     }
-
+    public class ProgressViewHolder extends RecyclerView.ViewHolder
+    {
+        public ProgressViewHolder(View itemView) {
+            super(itemView);
+        }
+    }
 
 }
