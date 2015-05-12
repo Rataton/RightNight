@@ -19,14 +19,24 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".app.ui.activities.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.Toolbar" >
+            android:name=".app.ui.activities.SplashActivity"
+            android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Toolbar" >
+
+            <intent-filter>
+                <action android:name="mx.example.ruben.stir.MAINACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".app.ui.activities.ClubDetailsActivity"

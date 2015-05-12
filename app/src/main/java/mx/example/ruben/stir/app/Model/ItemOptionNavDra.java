@@ -1,4 +1,4 @@
-package mx.example.ruben.stir.app.Model;
+package mx.example.ruben.stir.app.model;
 
 public class ItemOptionNavDra
 {

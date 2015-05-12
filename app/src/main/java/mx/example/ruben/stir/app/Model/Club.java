@@ -1,10 +1,8 @@
-package mx.example.ruben.stir.app.Model;
+package mx.example.ruben.stir.app.model;
 
 import android.net.Uri;
 
 import com.google.gson.JsonObject;
-
-import mx.example.ruben.stir.app.Restfull.Constants;
 
 /**
  * Created by Ruben on 5/6/15.

@@ -18,4 +18,8 @@
     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
         AIzaSyDjVUYSVKl-zwtzTp44rJp3jJOy34Gc_mA
     </string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>

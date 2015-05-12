@@ -1,4 +1,4 @@
-package mx.example.ruben.stir.app.Restfull;
+package mx.example.ruben.stir.app.restfull;
 
 /**
  * Created by Ruben on 5/6/15.

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Stir.iml" filepath="$PROJECT_DIR$/Stir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RightNight.iml" filepath="$PROJECT_DIR$/RightNight.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
+
