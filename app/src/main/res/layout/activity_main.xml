@@ -22,7 +22,7 @@
 
         <fragment
             android:id="@+id/navigation_drawer"
-            android:name="mx.example.ruben.stir.app.UserInterface.Fragments.NavigationDrawerFragment"
+            android:name="mx.example.ruben.stir.app.ui.fragments.NavigationDrawerFragment"
             android:layout_width="@dimen/navigation_drawer_width"
             android:layout_height="match_parent"
             tools:layout="@layout/fragment_navigation_drawer"
